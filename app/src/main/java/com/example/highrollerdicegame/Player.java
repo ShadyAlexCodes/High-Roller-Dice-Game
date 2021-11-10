@@ -1,5 +1,8 @@
 package com.example.highrollerdicegame;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Player {
 
     private String playerName;
@@ -23,7 +26,7 @@ public class Player {
     }
 
     public void setPlayerScore(int playerScore) {
-        this.playerScore = playerScore;
+        this.playerScore += playerScore;
     }
 
     public String toString() {

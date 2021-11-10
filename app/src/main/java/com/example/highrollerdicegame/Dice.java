@@ -2,6 +2,7 @@ package com.example.highrollerdicegame;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Dice {
@@ -20,11 +21,13 @@ public class Dice {
 
             // Generate a random number..
             rollValue = generateRandomNumber(min, max);
-
+            System.out.println("A: " + rollValue);
             // Store that in the storage variable
             storage += rollValue;
-
+            System.out.println("B: " + storage);
             // Append the output
+            numberStorage.add(rollValue);
+            System.out.println("C: " + Arrays.toString(numberStorage.toArray()));
 
             // reset the roll value
             rollValue = 0;
@@ -32,11 +35,19 @@ public class Dice {
         }
 
         // return their sum
+        return rollValue;
+    }
+
+    public List<Integer> getNumberStorage() {
+        return numberStorage;
+    }
+
+    public int getStorage() {
         return storage;
     }
 
-    public String toString() {
-        return "";
+    public int getRollValue() {
+        return rollValue;
     }
 
     private int generateRandomNumber(int min, int max) {

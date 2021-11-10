@@ -10,12 +10,23 @@
         android:id="@+id/tvNumberView"
         android:layout_width="315dp"
         android:layout_height="33dp"
-        android:text="Hello World!"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.376" />
+
+    <TextView
+        android:id="@+id/tvWinner"
+        android:layout_width="315dp"
+        android:layout_height="33dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551" />
 
     <EditText
         android:id="@+id/etPlayerOne"
@@ -59,6 +70,7 @@
         android:layout_width="315dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="180dp"
+        android:onClick="createGame"
         android:text="Start Game"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,8 +81,23 @@
         android:layout_width="315dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="304dp"
+        android:enabled="false"
+        android:onClick="rollGame"
         android:text="Create Roll"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520dp"
+        android:backgroundTint="#00BCD4"
+        android:onClick="resetGame"
+        android:text="Reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
