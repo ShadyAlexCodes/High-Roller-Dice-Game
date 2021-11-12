@@ -93,7 +93,7 @@
         android:layout_width="215dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="520dp"
-        android:backgroundTint="#00BCD4"
+        android:enabled="false"
         android:onClick="resetGame"
         android:text="Reset"
         app:layout_constraintEnd_toEndOf="parent"
